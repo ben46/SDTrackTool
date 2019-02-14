@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/CoderLISIDI/SDTrackTool.git", :tag => s.version.to_s }
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.source_files = 'SDTrackTool/*'
+  s.source_files = 'SDTrackTool_Demo/SDTrackTool_Demo/SDTrackTool/*'
   s.frameworks = 'Foundation', 'UIKit'
 
 end
