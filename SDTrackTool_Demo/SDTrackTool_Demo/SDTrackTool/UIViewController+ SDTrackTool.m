@@ -36,36 +36,14 @@
     dispatch_once(&onceToken, ^{
         SEL originalSelector = @selector(viewWillAppear:);
         SEL swizzledSelector = @selector(sd_viewWillAppear:);
-        [self swizzlingInClass:[self class] originalSelector:originalSelector swizzledSelector:swizzledSelector];
+        [SDTrackTool swizzlingInClass:[self class] originalSelector:originalSelector swizzledSelector:swizzledSelector];
         
         SEL originalSelector2 = @selector(viewWillDisappear:);
         SEL swizzledSelector2 = @selector(sd_viewWillDisappear:);
-        [self swizzlingInClass:[self class] originalSelector:originalSelector2 swizzledSelector:swizzledSelector2];
+        [SDTrackTool swizzlingInClass:[self class] originalSelector:originalSelector2 swizzledSelector:swizzledSelector2];
     });
 }
 
-+ (void)swizzlingInClass:(Class)cls originalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector
-{
-    Class class = cls;
-    
-    Method originalMethod = class_getInstanceMethod(class, originalSelector);
-    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
-    
-    BOOL didAddMethod =
-    class_addMethod(class,
-                    originalSelector,
-                    method_getImplementation(swizzledMethod),
-                    method_getTypeEncoding(swizzledMethod));
-    
-    if (didAddMethod) {
-        class_replaceMethod(class,
-                            swizzledSelector,
-                            method_getImplementation(originalMethod),
-                            method_getTypeEncoding(originalMethod));
-    } else {
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    }
-}
 
 -(void)sd_viewWillAppear:(BOOL)animated {
     [self trackViewWillAppear];//插入埋点代码

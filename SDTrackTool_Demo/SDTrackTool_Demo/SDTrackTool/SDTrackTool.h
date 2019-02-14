@@ -11,9 +11,10 @@
 @interface SDTrackTool : NSObject
 
 + (void)configure;
-+(void)beginLogPageID:(NSString *)pageID;
-+(void)endLogPageID:(NSString *)pageID;
-+(void)logEvent:(NSString*)eventId;
++ (void)beginLogPageID:(NSString *)pageID;
++ (void)endLogPageID:(NSString *)pageID;
++ (void)logEvent:(NSString*)eventId;
++ (void)swizzlingInClass:(Class)cls originalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector;
 
 @end
 

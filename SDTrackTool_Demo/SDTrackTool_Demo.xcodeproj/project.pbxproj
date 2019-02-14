@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C0FC7D922156E3C004CE379 /* UITableView+SDTrackTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FC7D822156E3C004CE379 /* UITableView+SDTrackTool.m */; };
 		C3F1AF111FC6C1F9007232E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F1AF101FC6C1F9007232E3 /* AppDelegate.m */; };
 		C3F1AF191FC6C1F9007232E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F1AF181FC6C1F9007232E3 /* Assets.xcassets */; };
 		C3F1AF1C1FC6C1F9007232E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F1AF1A1FC6C1F9007232E3 /* LaunchScreen.storyboard */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C0FC7D722156E3C004CE379 /* UITableView+SDTrackTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDTrackTool.h"; sourceTree = "<group>"; };
+		8C0FC7D822156E3C004CE379 /* UITableView+SDTrackTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDTrackTool.m"; sourceTree = "<group>"; };
 		C3F1AF0C1FC6C1F9007232E3 /* SDTrackTool_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDTrackTool_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F1AF0F1FC6C1F9007232E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3F1AF101FC6C1F9007232E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				C3F1AF301FC6C7B1007232E3 /* UIControl+SDTrackTool.m */,
 				C3F1AF341FC6C7B1007232E3 /* UIViewController+SDTrackTool.h */,
 				C3F1AF381FC6C7B1007232E3 /* UIViewController+ SDTrackTool.m */,
+				8C0FC7D722156E3C004CE379 /* UITableView+SDTrackTool.h */,
+				8C0FC7D822156E3C004CE379 /* UITableView+SDTrackTool.m */,
 			);
 			path = SDTrackTool;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			files = (
 				C3F1AF3D1FC6C7B1007232E3 /* UIViewController+ SDTrackTool.m in Sources */,
 				C3F1AF2D1FC6C3BE007232E3 /* Page1ViewController.m in Sources */,
+				8C0FC7D922156E3C004CE379 /* UITableView+SDTrackTool.m in Sources */,
 				C3F1AF1F1FC6C1F9007232E3 /* main.m in Sources */,
 				C3F1AF3C1FC6C7B1007232E3 /* SDTrackTool.m in Sources */,
 				C3F1AF281FC6C273007232E3 /* Page2ViewController.m in Sources */,
