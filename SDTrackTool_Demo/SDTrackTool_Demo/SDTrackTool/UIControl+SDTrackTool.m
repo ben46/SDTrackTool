@@ -45,6 +45,7 @@
 - (NSDictionary *)getConfigDict {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"SDTrackEvents" ofType:@"plist"];
     NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    NSLog(@"asdfasdfasdf%@", dic);
     return dic;
 }
 

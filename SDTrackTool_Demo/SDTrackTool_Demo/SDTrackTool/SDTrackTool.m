@@ -7,7 +7,8 @@
 //
 
 #import "SDTrackTool.h"
-//#import "UMMobClick/MobClick.h"
+#import <UMCommon/UMCommon.h>
+#import <UMAnalytics/MobClick.h>
 #import <objc/runtime.h>
 
 @implementation SDTrackTool
@@ -28,15 +29,15 @@
 }
 
 +(void)beginLogPageID:(NSString *)pageID {
-//    [MobClick beginLogPageView:pageID];
+    [MobClick beginLogPageView:pageID];
 }
 
 +(void)endLogPageID:(NSString *)pageID {
-//    [MobClick endLogPageView:pageID];
+    [MobClick endLogPageView:pageID];
 }
 
 +(void)logEvent:(NSString*)eventId {
-//    [MobClick event:eventId];
+    [MobClick event:eventId];
 }
 
 
