@@ -1,0 +1,5 @@
+target 'SDTrackTool_Demo' do
+    pod 'UMCCommon','2.0.1'
+    pod 'UMCSecurityPlugins','1.0.6'
+    pod 'UMCAnalytics','6.0.3'
+end

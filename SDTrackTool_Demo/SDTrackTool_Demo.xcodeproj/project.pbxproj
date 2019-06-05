@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B76321AFCA011BE53830FFE /* libPods-SDTrackTool_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86294F018D6A908F361260E9 /* libPods-SDTrackTool_Demo.a */; };
 		8C0FC7D922156E3C004CE379 /* UITableView+SDTrackTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FC7D822156E3C004CE379 /* UITableView+SDTrackTool.m */; };
 		C3F1AF111FC6C1F9007232E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F1AF101FC6C1F9007232E3 /* AppDelegate.m */; };
 		C3F1AF191FC6C1F9007232E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F1AF181FC6C1F9007232E3 /* Assets.xcassets */; };
@@ -23,8 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86294F018D6A908F361260E9 /* libPods-SDTrackTool_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDTrackTool_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0FC7D722156E3C004CE379 /* UITableView+SDTrackTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDTrackTool.h"; sourceTree = "<group>"; };
 		8C0FC7D822156E3C004CE379 /* UITableView+SDTrackTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDTrackTool.m"; sourceTree = "<group>"; };
+		A20E2D57FACBC9005A99E49D /* Pods-SDTrackTool_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDTrackTool_Demo.release.xcconfig"; path = "Target Support Files/Pods-SDTrackTool_Demo/Pods-SDTrackTool_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		C3F1AF0C1FC6C1F9007232E3 /* SDTrackTool_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDTrackTool_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F1AF0F1FC6C1F9007232E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3F1AF101FC6C1F9007232E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		C3F1AF351FC6C7B1007232E3 /* UIControl+SDTrackTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+SDTrackTool.h"; sourceTree = "<group>"; };
 		C3F1AF371FC6C7B1007232E3 /* SDTrackTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTrackTool.m; sourceTree = "<group>"; };
 		C3F1AF381FC6C7B1007232E3 /* UIViewController+ SDTrackTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ SDTrackTool.m"; sourceTree = "<group>"; };
+		D118FC914AD41D66760B4072 /* Pods-SDTrackTool_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDTrackTool_Demo.debug.xcconfig"; path = "Target Support Files/Pods-SDTrackTool_Demo/Pods-SDTrackTool_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +56,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B76321AFCA011BE53830FFE /* libPods-SDTrackTool_Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE9B707CD96684172BC62FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86294F018D6A908F361260E9 /* libPods-SDTrackTool_Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3F1AF031FC6C1F9007232E3 = {
 			isa = PBXGroup;
 			children = (
 				C3F1AF0E1FC6C1F9007232E3 /* SDTrackTool_Demo */,
 				C3F1AF0D1FC6C1F9007232E3 /* Products */,
+				E1040BE7B5CFF46F9B7A22AF /* Pods */,
+				0CE9B707CD96684172BC62FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +125,15 @@
 			path = SDTrackTool;
 			sourceTree = "<group>";
 		};
+		E1040BE7B5CFF46F9B7A22AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D118FC914AD41D66760B4072 /* Pods-SDTrackTool_Demo.debug.xcconfig */,
+				A20E2D57FACBC9005A99E49D /* Pods-SDTrackTool_Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +141,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F1AF221FC6C1F9007232E3 /* Build configuration list for PBXNativeTarget "SDTrackTool_Demo" */;
 			buildPhases = (
+				B3A73A8FEF1BAB7A508C51EA /* [CP] Check Pods Manifest.lock */,
 				C3F1AF081FC6C1F9007232E3 /* Sources */,
 				C3F1AF091FC6C1F9007232E3 /* Frameworks */,
 				C3F1AF0A1FC6C1F9007232E3 /* Resources */,
@@ -177,6 +202,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3A73A8FEF1BAB7A508C51EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDTrackTool_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3F1AF081FC6C1F9007232E3 /* Sources */ = {
@@ -314,10 +364,11 @@
 		};
 		C3F1AF231FC6C1F9007232E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D118FC914AD41D66760B4072 /* Pods-SDTrackTool_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 266655SB8D;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SDTrackTool_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lisd.SDTrackTool-Demo";
@@ -328,10 +379,11 @@
 		};
 		C3F1AF241FC6C1F9007232E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20E2D57FACBC9005A99E49D /* Pods-SDTrackTool_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 266655SB8D;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SDTrackTool_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lisd.SDTrackTool-Demo";

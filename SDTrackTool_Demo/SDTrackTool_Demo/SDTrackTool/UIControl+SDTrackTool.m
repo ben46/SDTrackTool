@@ -35,6 +35,7 @@
         NSString *actionString = NSStringFromSelector(action);
         NSString *targetName = NSStringFromClass([target class]);
         NSDictionary *configDict = [self getConfigDict];
+        NSLog(@"actionString: %@", actionString);
         eventID = configDict[targetName][@"ControlEventIDs"][actionString];
     }
     if (eventID != nil) {
@@ -45,7 +46,7 @@
 - (NSDictionary *)getConfigDict {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"SDTrackEvents" ofType:@"plist"];
     NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    NSLog(@"asdfasdfasdf%@", dic);
+    NSLog(@"%@", dic);
     return dic;
 }
 
